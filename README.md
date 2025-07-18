@@ -1,4 +1,5 @@
 # Batch Media Renamer
+## !!! Requires Bash 4.0 or newer (bash --version) !!!
 
 A Bash script to **rename TV show episode files** into a consistent `SXXEXX` format. Supports multiple common filename formats, recursive processing, dry-run mode, logging, and undo functionality.
 
@@ -25,14 +26,12 @@ A Bash script to **rename TV show episode files** into a consistent `SXXEXX` for
 ---
 
 ## Installation (optional)
-
-1. Copy the `renamer` and `renamer-undo` scripts to a directory in your `$PATH`, e.g., `/usr/local/bin/`  
+Copy the `renamer` and `renamer-undo` scripts to a directory in your `$PATH`, e.g., `/usr/local/bin/`  
 ```bash
 sudo cp renamer /usr/local/bin/
 sudo cp renamer-undo /usr/local/bin/
 sudo chmod +x /usr/local/bin/renamer /usr/local/bin/renamer-undo
 ```  
-2. Make sure you have Bash 4.0 or newer (bash --version).
 
 # Usage
 `renamer [options] [dir1 dir2 ...]`  
