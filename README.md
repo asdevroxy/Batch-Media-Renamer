@@ -26,18 +26,18 @@ A Bash script to **rename TV show episode files** into a consistent `SXXEXX` for
 
 ## Installation (optional)
 
-1. Copy the `renamer` and `renamer-undo` scripts to a directory in your `$PATH`, e.g., `/usr/local/bin/`
+1. Copy the `renamer` and `renamer-undo` scripts to a directory in your `$PATH`, e.g., `/usr/local/bin/`  
 ```bash
 sudo cp renamer /usr/local/bin/
 sudo cp renamer-undo /usr/local/bin/
 sudo chmod +x /usr/local/bin/renamer /usr/local/bin/renamer-undo
-```
+```  
 2. Make sure you have Bash 4.0 or newer (bash --version).
 
 # Usage
-`renamer [options] [dir1 dir2 ...]`
+`renamer [options] [dir1 dir2 ...]`  
 
-If no directories are specified, the current directory is processed recursively.
+If no directories are specified, the current directory is processed recursively.  
 Use -dr to perform a dry-run (no files are renamed, but it logs what would be renamed).
 
 # Examples
@@ -52,12 +52,12 @@ Rename files recursively in /media/shows:
 `renamer /media/shows`
 
 # Undoing Changes
-Using Batch Media Renamer generates a log file with the unix timestamp of execution. You can undo changes with `renamer-undo` (can be called directly if renamer-undo is in `/usr/local/bin`):
-`renamer-undo [logfile]`
+Using Batch Media Renamer generates a log file with the unix timestamp of execution.  
+You can undo changes with `renamer-undo` (can be called directly if renamer-undo is in `/usr/local/bin`): `renamer-undo [logfile]`  
 If no log file is provided, the most recent .log file in the current directory is used.
 
 # Important Notes
-The script uses Bash regex features, so Bash 4.0+ is required.
+The script uses Bash regex features, so Bash 4.0+ is required.  
 Always test with -dr before running to avoid accidental renaming.
 
 # Contributing
